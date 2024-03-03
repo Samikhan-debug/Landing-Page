@@ -1,0 +1,133 @@
+body{
+     margin: 0;
+     overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+header{
+    background-color: aqua;
+    padding:15px;
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    height: 150px;
+}
+.header-content{
+    text-align: center;
+    margin: 0 auto;
+ }
+
+ .search-bar {
+    display: flex;
+    align-items: center;
+ }
+
+ .search-bar input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+ }
+ .search-bar button{
+    padding: 10px;
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    /* cursor: pointer; */
+    margin-left: 10px;
+ }
+ .search-bar button:hover {
+    background-color: #45a049;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+  
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    /* this will remove the hyperlink underline */
+
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav a:hover{
+    background-color: black;
+}
+
+.tagline {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Align items vertically in the center */
+    background-color: yellow;
+    color: blue;
+    padding: 14px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100vw; /* Full width of the viewport */
+}
+
+.carousel-container {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    animation: slideAnimation 50s infinite; /* Adjust the duration as needed */
+}
+
+.carousel-item {
+    flex: 0 0 100%; /* Each item takes the full width of the viewport */
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.carousel-item img {
+    width: 100%; /* Make sure the image takes the full width of its container */
+    height: auto;
+}
+
+@keyframes slideAnimation {
+    0%, 100% { transform: translateX(0%); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+}
+
+.section1{
+    text-align: center;
+    font-size: x-large;
+}
+
+.parent{
+    display: flex;
+    background-color: rgb(119, 53, 119);
+}
+.left{
+    width: 20%;
+    margin-left: 10px;
+}
+.center{
+    width: 38%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: white;
+}
+.right{
+    width: 38%;
+    margin-left: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
